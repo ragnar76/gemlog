@@ -1,0 +1,7 @@
+# Neuer Gemini Server Installiert (05.11.2020 / ragnar)
+
+Tja, nun steht er da, mein Gemini Server und muss erstmal rausfinden was ich damit machen werde. So ganz weiss ich es noch nicht. Mal sehen.
+
+Jedenfalls läuft hier ein GNC Server von Jeff Armstrong¹. War gar nicht so simpel den einzurichten. Während das bauen des Fortran Codes reltiv schnell ging war das einrichten in die /etc/inetd.conf nicht ganz einfach. Jeff beschrieb eine Insatallation unter einem BSD währen ich hier ein Debian 10 benutze. Lange Rede, kurzer Sinn: Es läuft!
+
+=>http://git.rainbow-100.com/cgit.cgi/GNC/about/

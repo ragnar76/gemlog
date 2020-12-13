@@ -1,0 +1,28 @@
+# dsgvo – mir doch egal
+### 4. Mai 2019 von ragnar
+
+> Achtung!!! Der Beitrag betrifft eigentlich mein Blog auf https://theragnarbay.org/ aber grundsätzlich ließe sich das Prinzip auch auf den Gemini Server hier ausweiten!
+
+Seit Ende Mai 2018 gilt die Datenschutz-Grundverordnung hier in Deutschland. Eigentlich eine gute Sache, sie soll den Umgang mit personenbezogene Daten regeln. Viele Dos und Don’ts wurde geschrieben und es wurde mindestens genau so viel darüber geredet. Hier will ich euch kurz vorstellen was mit euren Daten passiert, wenn ihr meinen Blog lest.|||
+
+Wenn Du diese Seite besuchst speichert mein Webserver folgende Daten von dir:
+
+* IP
+* Datum und Uhrzeit
+* Welche Seite du aufrufst
+* Welchen Browser du benutzt (und auch welches Betriebssystem)
+
+Das geschieht völlig automatisch und ist ließe sich relativ simpel abschalten. Um meinen Server aber vor fiesen Hackern aus Russland, China und dem Rest der Welt ein wenig abzusichern nutze ich Fail2Ban [1]. Fail2Ban ist ein kleines aber sehr mächtiges Tool das verschiedene Logfiles überwacht und nach vordefinierten Mustern sucht. Wird die Mustererkennung fündig landet die IP auf einer Sperrliste und wird für eine gewisse Zeit über die Firewall gesperrt.
+
+Anschließend werden dieses Logfiles stündlich von anonip [2] unkenntlich gemacht. Es nimmt eine IP, z.B. 192.168.1.153 und ersetzt das letzte Oktett durch eine 0 (aus der IP wird dann 192.168.1.0). Dadurch sind immer noch grobes Geolocating oder DNS-Reverse-Auflösungen möglich aber die IP selber lässt sich keiner Person, Anschluss, Firma oder sonst wem mehr zuordnen. Nach einer Woche werden die anonymisierten Logfiles vom Linux-Server rotiert [3] und nach 4 Wochen endgültig gelöscht.
+
+Kommentare sind nett aber bei mir deaktiviert.
+
+Was es bei mir nicht gibt sind Cookies, irgendwelche Analytic-Dinger oder sonst was. Lediglich der Font wird von Google geladen. Wer das nicht will kann das bei Goolge [4] abstellen. In der nächsten Zeit wird das aber geändert sodass die Fonts von hier aus angeboten werden.
+
+Hin und wieder kann es vorkommen das ich Twitter Tweets oder Youtube Videos einbinde. Deren Datenschutzbestimmingen findest du dort.
+
+=> http://www.fail2ban.org/wiki/index.php/Main_Page 1 – Fail2Ban Webseite
+=> https://privacyfoundation.ch/de/service/anonip.html 2 – AnonIP Webseite
+=> https://wiki.ubuntuusers.de/Logdateien/#Logrotate 3 – Infos zu logrotate
+=> https://adssettings.google.com/authenticated 4 – Ablehnen von Google Fonts

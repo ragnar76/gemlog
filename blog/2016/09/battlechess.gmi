@@ -1,0 +1,15 @@
+# Battlechess * 2
+### 29. September 2016 von ragnar 
+
+Damals, im Kartoffelkrieg, so um 1989, als die Gummistiefel noch aus Holz waren und als es noch hieß Atari vs. Amiga brachte Interplay das Spiel Battle Chess für etliche Homecomputer raus. Das Besondere an dem Spiel war dass das Schlagen der Figuren durch kurze, animierte Sequenzen dargestellt wurde.Ein weniger bekanntes Feature war die Möglichkeit zwei Computer per Nullmodemkabel zu koppeln und so gegeneinander zu spielen. Das geht sogar so weit dass das auch zwei verschiedene Systeme sein konnten. So konnte man als Atari Besitzer gegen Amiga Besitzer spielen oder Amiga vs. Apple vs. DOS usw. Peter Fletcher auf Twitter [1] hat sich dessen mal angenommen und mal das ein oder andere Gerät miteinander verbunden.Ich dachte mir, was der kann, kann ich auch. Aber anders! Und so fing ich an mit Hatari rum zu spielen. Leider waren die ersten Versuche nicht so von Erfolg gekrönt. Aus irgendeinem Grund wollte das nicht mit dem zugrunde liegendem Windows 10 funktionieren (auch akzeptiert Hatari keine Optionen auf der Kommandozeile). Glücklicherweise habe ich aber noch Linux auf der SSD. Leider hatte ich kein aktuelles Hatari auf dem System aber glücklicherweise lässt sich das recht schnell aus dem Quellcode selber bauen und installieren.Hatari selber legt bei dem ersten Programmstart eine zentrale Konfigdatei an die für mich nutzlos ist. Ich will ja das Programm 2-mal starten aber mit unterschiedlichen Einstellungen bei der seriellen Kommunikation. So bleibt mir nur die Kommandozeile.
+
+> hatari –monitor rgb –rs232-in rs232-out-file –rs232-out rs232-in-file –memsize 4 – tos tos.img diskimage.st
+
+Wichtig ist hier das, wie bei einem echtem Nullmodemkabel, “in” und “out” getauscht werden. Mehr gibt es dabei nicht zu beachten.
+
+Ein erster Test mit Connect lief erstaunlich gut und so hab ich mich dann daran gewagt das Spiel auszuprobieren. Auch das ging, nachdem ich herrausgefunden hatte wie man in die Einstellungen kommt sehr gut.
+
+Kleine Notiz am rande. Ich hatte Probleme mit TOS 1.02. Aus irgendeinem Grund mochte Battle Chess nicht damit laufen aber mit TOS 1.04 lief es sehr gut.
+Prinzipiell sollte sich das Vorgehen auch auf die MIDI-Schnittelle übertragen lassen und speziell unter Linux könnte man ein paar Sockets missbrauchen. Das würde bedeuten das man Midimaze übers Internet auf dem PC mit Hatari zocken könnte. Demnächst steht ja der Winter vor der Tür, ich werde es sicherlich mal ausprobieren. 🙂
+
+Updates folgen!

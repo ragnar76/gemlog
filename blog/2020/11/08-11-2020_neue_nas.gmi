@@ -1,0 +1,37 @@
+# Neue NAS  (08.11.2020 /ragnar)
+
+Vor gut 4 Wochen hat meine alte NAS den Geist aufgegeben und es musste Ersatz her. Nachdem ich mich so auf dem Markt umgesehen habe musste ich feststellen das NAS oder Microserver echt teuer sind und so entschloss ich mich mir eine NAS selber zu bauen. Nur, ich wusste nicht so recht was ich da an Hardware einstecken wollte und sollte. Denn ich habe ein paar Anforderungen an meine NAS:
+
+ ◉  zum einen sollte die Hauptsächlich dazu dienen mir Netzlaufwerke bereit zu stellen auf dem ich meine Fotos, Backups usw. mache
+
+ ◉  Die Hardeware sollte genug Leistung haben um ein paar VMs laufen zu lassen. Daher scheiden schwachbrüstige CPUs à la Celeron, Pentium und Co. aus.
+
+ ◉  An Arbeitsspeicher sollten mindesten 16GB oder mehr verfügbar sein
+
+ ◉  Weil die Kiste bei mir im Schlafzimmer steht sollte die so geräuschfrei wie möglich sein.
+
+Weil das ganz schön heftige Anforderungen sind musste ich mich auf dem PC Markt umsehen (klar, was und wo sonst). Ehrlich gesagt, hatte ich aber keine Ahnung was grade so aktuell ist, meinen letzten PC den ich selber gebaut habe war in den 1990ern. In meinem Job als Systemadministrator schau ich mich mittler- weile nur noch Laptops und fertige Server an. Es ist einfach schneller und günstiger: bestellen, auspacken, einschalten und läuft (im besten Fall).
+
+Letztlich bin ich dann an einem "normalen" PC angekommen in dem folgende Hardware steckt:
+
+ ◉  Gigabyte B450 Aorus M M-ATX
+
+ ◉  AMD Ryzen 5 3600
+
+ ◉  vorerst 16GB Ram
+
+ ◉  Fractal Define R6 Black
+
+ ◉  be quiet! Pure Rock 2 black 
+
+ ◉  Zusätzlich kamen noch ein paar Kleinigkeiten wie ein neues Netzteil, SATA-Kabel usw. hinzu.
+
+Grundsätzlich bin ich mit der Auswahl zufrieden - auch wenn meine Arbeitskollegen anders darüber denken. Sie meinen ich würde mir eine Zockerkiste zusammen bauen und ich muss zugeben, von den reinen Tech-Spechs her spricht alles dafür. Dazu später mehr.
+
+Nach einigem Ausprobieren bin ich wieder bei Windows Server gelandet. Ganz einfach deswegen weil mir OpenMediaVault nicht gefällt, FreeNAS bzw. TrueNAS war egtl. ganz gut und auch schnell konfiguriert aber es hatte große Probleme mit der verbauten Realtek Netzwerkkarte. Nach einigen Megabyte brach der Upload bzw. der Kopiervorgang mit irgendwelchen Netzwerkfehlern ab. Sehr schlecht, leider :( . Später habe ich dann herausgefunden das TrueNAS auf Intelkarten optimiert ist und ich will dafür nicht noch weiteres Geld ausgeben. Als Alternative wäre noch ein komplett selbst gefrickeltes Debian in Betracht gekommen aber dazu hatte ich keine Lust. Vielleicht später.
+
+Womit ich so gar nicht zufrieden bin ist die Virtualisierung. AMD unterstützt zwar Hyper-V (und andere Methoden wie Qemu z.B.) aber irgendwie fühlen sich die VMs nicht so zackig an wie auf einer CPU von Intel. Allerdings kann es auch an der ein oder anderen Stelle liegen. Z.b. könnte ich mal probieren ob das nach einem Bios-Update immer noch so ist. Auch liegen die VM-Images auf einer Festplatte. Vielleicht bringt es was die auf einen SSD zu kopieren. Hier hab ich auf jedenfall noch Optimierungspotential.
+
+Optimierungspotential seh ich auch noch an einer anderen Stelle. Das ist schon ein wuchtiges Maschinchen die hier neben mir steht und ich überlege tatsächlich grade das Ding eine Zockerkiste umzubauen. Anlass dafür war das ich auf der Arbeit einen neuen Microserver brauchte und ich bei Thomas Krenn fündig wurde¹. Der kostet im vergleich zu einem HPE ProLiant MicroServer   Gen10 nur einen Bruchteil, mit Xeon CPU und ich überlege jetzt tatsächlich   den Rechner hier mit einer "dicken" Grafikkarte aufzurüsten und zum zocken   zu verwenden. Who knows what happens!
+
+Jedenfalls hab ich jetzt erstmal wieder eine NAS die meine Daten sichert.

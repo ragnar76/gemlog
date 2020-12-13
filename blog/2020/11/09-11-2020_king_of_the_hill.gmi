@@ -1,0 +1,38 @@
+# King of the Hill - oder wer ist hier der schnellste? (09.11.2020 / ragnar)
+
+In meinem vorherigen Artikel beschrieb ich ja dass ich mir einen neuen Rechner zusammengestellt habe. Nun wollte ich auch mal wissen wer der schnellste ist. Um nicht Äppel mit Birnen zu vergleichen habe ich auf Pov Ray¹ zurückgegriffen. Das ist in der Lage auch einzelne Cores zu testen.
+
+Und was soll ich sagen: Klar das der Ryzen 5 3600 gewonnen hat. Überraschend finde ich allerdings das, sowohl auf der AMD CPU als auch auf meinem Arbeitslaptop, die WSL Versionen schneller waren als die nativen unter Windows. Wenn mir weitere Geräte unter die Finger kommen werde ich diese in der Tabelle unten hinzufügen.
+
+
+```
++--------------------------------------------------------------------------------------------------------+
+| Benchmarergebnisse. Gemessen mit "povray -benchmark +wt1"                                              |
++--------------------------------------------------------------------------------------------------------+
+| Typ           | CPU            | Geschwindigkeit | Betriebssystem      | Dauer                         |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Fileserver    | Ryzen 5 3600   | 4,2ghz max      | WSL (Debian 10)     | 0 hours 8 minutes 32 seconds  | 
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Laptop        | Core I7-9750h  | 4,5ghz max      | WSL (Debian 10)     | 0 hours 8 minutes 52 seconds  |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Fileserver    | Ryzen 5 3600   | 4,2ghz max      | Windows Server 2k19 | 0 hours 9 minutes 24 seconds  |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Laptop        | Core I7-9750h  | 4,5ghz max      | Windows 10          | 0 hours 10 minutes 00 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Linux VM      | Xeon Gold 6230 | 3,9ghz max      | Debian 10           | 0 hours 10 minutes 12 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Laptop        | Core I7-5600U  | 3,2ghz max      | Linux Mint 20       | 0 hours 11 minutes 16 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Laptop        | Core I7-7820HQ | 3,9ghz max      | Linux Mint 20       | 0 hours 11 minutes 19 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Dell Tower    | Xeon E3-1225   | 3,7ghz max      | Debian 10           | 0 hours 13 minutes 0 seconds  |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Dell Tower    | Xeon E3-1225   | 3,7ghz max      | Windows 10          | 0 hours 17 minutes 35 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Raspi 4       | Cortex-A72     | 1,5ghz          | Debian 10           | 0 hours 48 minutes 47 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Laptop        | Core I7-3632QM | 3,2ghz max      | Haiku               | 1 hours 4 minutes 57 seconds  |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+| Raspi 3       | Cortex-A53     | 1,35ghz         | Raspian             | 3 hours 45 minutes 29 seconds |
++---------------+----------------+-----------------+---------------------+-------------------------------+
+```

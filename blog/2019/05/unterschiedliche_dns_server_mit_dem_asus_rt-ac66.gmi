@@ -1,0 +1,13 @@
+# Unterschiedliche DNS Server mit dem Asus RT-AC66U
+### 5. Mai 2019 von ragnar
+
+
+
+Vor einiger Zeit hat mein heißgeliebter TP-Link 1043ND das zeitliche gesegnet und so traf es sich ganz gut das Saturn den Aus Wlan-Router im Angebot hatte. Nach der grundsätzlichen Konfiguration lief der dann auch ein paar Wochen sehr gut vor sich hin.
+
+Gestern musste ich allerdings ein Laptop in meine Windowsdomäne hängen und hab mich gewundert warum Windows immer wieder Probleme hatte. Der Fehler war schnell gefunden, es fehlte der Windows DNS-Server, der im lokalen Netz für die Namensauflösung zuständig ist. Ich hatte zwar in den DHCP-Einstellungen eine Serveradresse eingetragen (8.8.8.8 â€“ jajaja, Google ist böse aber der ist echt fix) aber die ging am Windows-Server vorbei. Tja, doof. Auf dem TP-Link hatte ich das gemacht aber jetzt nicht daran gedachtÂ 🙁
+
+Und nu? Einfach einen zweiten DNS-Server in die DHCP Optionen häckseln! Pustekuchen! Die Einstellungen erlauben nur einen DNS-Server. Es ist nicht möglich einen zweiten durch ein Leerzeichen oder durch ein Komma zu separieren. Kacke! Jetzt ist guter rat teuer. Merlin (ein OpenWRT Clone für Asus Geräte) wollte ich nicht installieren und eine APU2 muss ich jetzt nicht auch noch auf dem Tisch stehen haben.
+Glücklicherweise ging es dann doch ohne viel fuddelei. Insgesamt lassen sich, über die verschiedenen Einstellungen hinaus, drei DNS-Server eintragen. Der oben erwähnte in den DHCP-Einstellungen und zwei weitere in den WAN-Einstellungen. So kam der Windows DNS Server in das DHCP-Setting und zwei andere in die WAN-Settings.
+
+Der Router trägt sich dann selber als DNS-Server ein und leitet die Anfragen dann an den Primären bzw. Sekundären DNS weiter. So einfach kann es gehen wenn man weiß wie. Schade dass das nicht besser beschrieben ist.

@@ -1,0 +1,14 @@
+# Windows 10
+### 18. Juni 2016 von ragnar
+
+Ich und Windows? Das ist fast wie VW und richtige Abgaswerte! 😀
+
+Naja, seit meiner Umschulung zum Fachinformatiker bin ich halt gezwungen nicht nur mit Linux sondern auch mit Windows zu arbeiten. Zum arbeiten und lernen habe ich mir bei Amazon eine gebrauchte Windows 10 Pro Lizenz für stolze 18 Euro (!) geleistet. Solche Angebote tauchen immer mal wieder auf. Dort werden gebrauchte OEM Lizenzen zwischen 20 und 50 Euro verscherbelt. Dafür erhält man dann einen Brief in dem steht wie man Windows aktivieren, oder wenn man es noch nicht installiert hat, installieren kann. Ein bereits installiertes Windows Home lässt sich damit nicht herauf stufen aber dazu hat Microsoft selber einen Artikel im Technet (https://de.wikipedia.org/wiki/Cortana_(Software)) kann das viel besser erklären als ich hier.
+
+Neu hinzu gekommen ist noch das Info-Zenter das sich rechts neben der Uhr versteckt. Ein Klick auf das Symbol öffnet das Info-Center. Dort sind ein paar Schnelleinstellungen und Meldungen der APPs zu finden. Ansonsten hat sich oberflächlich nicht viel verändert, der Explorer sieht immer noch aus wie bisher, die Bedienung ist dem alten Windows immer noch recht ähnlich summa summarum ganz nett.
+
+Bachschmerzen bereiten allerdings die „erweiterten Schnüffelfunktionen“ und der Datenschutz. Die Sammelwut von Microsoft ist gewaltig! Angefangen vom altbekannten Fehlerbericht bishin dasss das WLan-Passwort an Microsoft gesendet wird ist schon übel. Wozu brauch ich auf dem Laptop / am PC die Spracheingabe? Ich sitz doch schon mit Maus und Tastatur davor. Wie man dem Herr werden kann ist in einem Heise Artikel (http://www.heise.de/newsticker/meldung/Windows-10-Datensammelwut-beherrschen-2774941.html) sehr gut beschrieben.
+
+Und sonst so? Tjoa…. Vor kurzem hat Microsoft angefangen ein Linux Subsystem einzubauen was in den „Insider Preview“ mitgeliefert wird. Das ist, für mich der eigentlich nur Linux nutzt, ganz hübsch. Über die Features holt man sich ein nettes „Ubuntu für Windows“ auf den Rechner das zusammen mit Ubuntu entwickelt wird. Ganz fertig ist das ganze noch nicht aber für eine Beta ist das schon richtig gut. Wer es aber ernst meint installiert Cygwin oder direkt ein richtiges Linux.
+
+Im großen und ganzen macht Windows 10 bisher einen recht guten Eindruck. Mal abwarten was da noch so kommt. Ich bin gespannt!

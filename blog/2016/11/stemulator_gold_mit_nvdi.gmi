@@ -1,0 +1,4 @@
+# Stemulator Gold mit NVDI
+### 18. November 2016 von ragnar
+
+Letztens brauchte ich mal wieder meinen alten Stemulator um was auszuprobieren. Leider brauchte das Programm NVDI. Was auf den ersten Blick recht einfach scheint erwies sich dann doch als etwas umständlich. Nach der Installation tat sich erstmal nichts, also genauer gesagt, die Ausgabe der Emulation war kaputt! Ein schneller Blick ins Handbuch brachte die Lösung. Es müssen _alle_ NVDI*.SYS, MFA*.SYS und NFPC*.SYS Files aus dem GEMSYS Ordner entfernt oder umbenannt werden. Freilich läuft NVDI dann unbeschleunigt aber der Cookie ist da und auch Fonts können benutzt werden.

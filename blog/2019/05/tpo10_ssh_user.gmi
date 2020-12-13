@@ -1,0 +1,36 @@
+# Top 10 SSH User
+### 4. Mai 2019 von ragnar
+
+Wer SSH auf einem Server laufen lässt wird früher oder später auch mal „Opfer“ einer Brute-Force-Attacke. Dem kann man nicht entgehen, ist halt so. Um ein wenig Ruhe zu haben verbiegen einige Leute den SSH Port (22) oder lassen Klassiker wie Fail2Ban laufen. Letzteres mache ich und bin bisher immer damit gut gefahren. Es hält ziemlich gut lästige Angriffsversuche ab und blockiert weitere für eine bestimmte Zeit. Irgendwann habe ich mich mal gefragt woher die Angriffe kommen (meistens aus China oder Russland) und welcher Benutzername verwendet wird.
+
+Das lässt sich mit ein bisschen Shellmagie leicht rausfinden. Der Befehl unten sucht nach dem Pattern „Failed password for“, sortiert und zählt ein bisschen rum und spuckt das Ergebnis schön übersichtlich aus (Hier die Version für Debian. Ggf. musst Du das bei dir in secure.log ändern).
+
+> $awk '/Failed password for/ ' /var/log/auth.log | sed 's/.* \([[:print:]]\+\) from .*/ \1 /g ' | sort | uniq -c | sort -n -k1
+
+Logrotate dreht bei mir alle 7 Tage die Logfiles auf Links, daher kommen jetzt hier die Top 10 der meistbenutzen Usernamen der letzten 7 Tage
+
+```
+╔═══════╦═════════════════╦══════════════╗
+║ Platz ║ Wie oft gezählt ║ Benutzername ║
+╠═══════╬═════════════════╬══════════════╣
+║ 10    ║ 131             ║ jboss        ║
+╠═══════╬═════════════════╬══════════════╣
+║ 9     ║ 146             ║ postgres     ║
+╠═══════╬═════════════════╬══════════════╣
+║ 8     ║ 149             ║ oracle       ║
+╠═══════╬═════════════════╬══════════════╣
+║ 7     ║ 151             ║ ftpuser      ║
+╠═══════╬═════════════════╬══════════════╣
+║ 6     ║ 156             ║ test         ║
+╠═══════╬═════════════════╬══════════════╣
+║ 5     ║ 163             ║ user         ║
+╠═══════╬═════════════════╬══════════════╣
+║ 4     ║ 169             ║ ubuntu       ║
+╠═══════╬═════════════════╬══════════════╣
+║ 3     ║ 1135            ║ pi           ║
+╠═══════╬═════════════════╬══════════════╣
+║ 2     ║ 1364            ║ admin        ║
+╠═══════╬═════════════════╬══════════════╣
+║ 1     ║ 2565            ║ root         ║
+╚═══════╩═════════════════╩══════════════╝
+```

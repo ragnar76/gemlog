@@ -1,0 +1,20 @@
+# Intervalometer im Selbstbau
+### 11. November 2015 von ragnar
+
+Wenn man sich mit der Fotografie ein wenig beschäftigt landet man früher oder später auch bei Zeitraffern – Neudeutsch Timelapse. Hierbei drückt nicht der Fotograf auf den Auslöser sondern das übernimmt dann ein Automat. Das kann entweder Software gesteuert sein oder eben etwas Hardware. Auf meiner EOS 450D kann ich sowas Softwaretechnisch nicht einstellen, auch Magic Lantern gibt es nicht so bleibt mir als Alternative nur ein externes Gerät dass das übernimmt. Wie üblich schwanken die Preise bei Fotoequipment zwischen böse und „seid Ihr Wahnsinnig?“ was ich mir derzeit nicht erlauben kann. Also muss eine Selbstbaulösung her.
+
+Fündig geworden bin ich bei Doc D.I.Y.. Prinzipiell ist das eine recht dumme Schaltung die so simpel ist das man zur Not mit dem Finger nachzeichnen kann
+
+Man braucht lediglich einen Attiny, einen kleinen Kondensator, einen Taster und das Anschlusskabel. Anders als beschrieben habe ich allerdings kein Gehäuse vom Klinkenstecker benutzt (hatte nur einen normalen Attiny in DIL-Gehäuse und nicht SMD) sondern eines von einem Fernauslöser den ich mal bei Amazon bestellt hatte. Für 4 Euro (inkl. Porto aus China!) war da einfach alles dran was ich brauchte, Platz und das Kabel.
+
+Bevor ich anfing zu Löten musste ich erstmal den Attiny „programmieren“, auch hier half Doc D.I.Y. wieder weiter. Er hatte schon das passende Programm inkl. hex Datei auf seine Homepage gestellt so dass ich mich da bedienen konnte. Leider benutzt er wohl Windows und das half mir und meinem Linux wenig. Ein wenig rum gefrage im Chaosdorf und schnell war klar wie ich avrdude zu benutze habe. Das alles wurde dann flugs auf einem Stücken Lochrasterplatine zusammengelötet und anschließend ans Gehäuse angepasst.
+
+Was soll man sagen. Man merkt schon dass der Fernauslöser so billig war. Innen drin waren nur 3 Blechstreifen die den elektrischen Kontakt hergestellt haben. Hey, es funktioniert und kostet nicht die Welt! Leider mussten die raus fliegen weil sonst kein Platz mehr für den Rest gewesen wäre. So musste ich, um den neuen Taster einzubauen, ein Loch in die Seite bohren. Fast fertig. Damit der alte Taster bzw. egtl. nur noch die Kappe an ihrem Ort bleibt habe ich das ganze in einer schönen, dicken Schicht Heißkleber verpackt (Heißkleber darf bei keinem Bastelprojekt fehlen!) Nu noch alles schön verpacken und das Gehäuse zuschrauben.
+
+Zeit das ding endlich mal auszuprobieren. Glatter Fehlstart!
+
+Aus irgendeinem Grund fing die Kamera an wie wild Fotos zu machen ohne das ich auch nur in die nähe des Tasters gekommen bin. Naja, war schon spät, ich hatte auch keine Lust mehr -> auf den nächsten Tag verschoben. Am nächsten Tag fiel mir dann auf das ich die FUSE-Bits übersehen hatte (Diese kleinen Dinger „konfigurieren“ den Attiny). Also nochmal den Programmer raus geholt und das selbe Spiel nochmal aber diesmal mit den FUSE-Bits. Et Voila, es funktioniert. 🙂
+
+Wie sowas aussehen kann hab ich dann mal bei Youtube hochgeladen.
+
+=> https://www.youtube.com/watch?v=D0Tnx7QqaN0

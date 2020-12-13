@@ -1,0 +1,47 @@
+```
+          ____ _                        _       _           _           
+         / ___| |__   __ _  ___  ___   / \   __| |_ __ ___ (_)_ __  ___ 
+        | |   | '_ \ / _` |/ _ \/ __| / _ \ / _` | '_ ` _ \| | '_ \/ __|
+        | |___| | | | (_| | (_) \__ \/ ___ \ (_| | | | | | | | | | \__ \
+         \____|_| |_|\__,_|\___/|___/_/   \_\__,_|_| |_| |_|_|_| |_|___/
+        ( best viewed in monospace )
+-------------------------------------------------------------------------------
+```
+
+> Bitte beachten! Der Server läuft erst seit ein paar Tagen und ich muss mich noch an die Syntax gewöhnen. Außerdem weiss ich noch nicht wie ich das hier aufbauen will - ragnar
+
+
+
+
+# Blogposts
+## 2020
+
+## 2019
+=> blog/2019/05/tpo10_ssh_user.gmi Top 10 SSH User
+
+## 2018
+
+
+## 2017
+=> blog/2017/01/restauration_eines_bismarck_lastenrades.gmi Restauration eine Bismarck Lastenrades
+
+## 2016
+=> blog/2016/09/battlechess.gmi BattleChess * 2
+=> blog/2016/06/windows_10.gmi Windows 10
+
+## 2015
+=> blog/2015/11/intervalometer_im_selbstbau.gmi Intervallometer im Selbstbau
+=> blog/2015/11/neues_leder_fuer_den_hintern_teil_2.gmi Neues Leder für den Hintern - Teil 2
+=> blog/2015/09/firebee_die_2te.gmi FireBee die 2te
+
+## 2014
+=> blog/2014/11/neues_leder_fuer_den_hintern.gmi Neues Leder für den Hintern
+
+# Kontakt
+=> https://mastodon.social/@zwangseinweisung Mastodn
+
+# Changelog
+ ◉ 15-11-2020 - Atari Bereich hinzugefügt. Aber noch kein Inhalt erstellt
+ ◉ 08-11-2020 - Entwurf einer Index Seite erstellt
+ ◉ 05-11-2020 - Server eingerichtet
+
