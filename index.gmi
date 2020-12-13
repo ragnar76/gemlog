@@ -11,7 +11,7 @@
 
 
 # Blogposts
-## 2020
+=> blog/2020/index.gmi • 2020
 
 ## 2019
 => blog/2019/05/tpo10_ssh_user.gmi Top 10 SSH User
